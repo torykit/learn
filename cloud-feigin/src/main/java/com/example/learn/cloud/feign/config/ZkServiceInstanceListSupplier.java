@@ -27,7 +27,6 @@ public class ZkServiceInstanceListSupplier implements ServiceInstanceListSupplie
         serviceInstances.add(new DefaultServiceInstance("in-1", getServiceId(), "localhost", 7000, false));
         serviceInstances.add(new DefaultServiceInstance("in-2", getServiceId(), "localhost", 7001, false));
 
-        System.out.println("返回服务列表");
         return Flux.just(serviceInstances);
     }
 }
