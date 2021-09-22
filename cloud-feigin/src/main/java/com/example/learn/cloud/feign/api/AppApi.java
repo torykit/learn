@@ -1,8 +1,6 @@
 package com.example.learn.cloud.feign.api;
 
-import feign.RequestLine;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @since 2021-09-14
  */
 //@RequestMapping("index")
-@FeignClient(value = "producer")
-public interface ProducerIndexApi {
+@FeignClient(value = "app")
+public interface AppApi {
 
     @GetMapping("/index")
     String index();

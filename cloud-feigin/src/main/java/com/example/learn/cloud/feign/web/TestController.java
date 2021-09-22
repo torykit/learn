@@ -1,5 +1,6 @@
 package com.example.learn.cloud.feign.web;
 
+import com.example.learn.cloud.feign.api.AppApi;
 import com.example.learn.cloud.feign.api.ProducerIndexApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,10 +18,18 @@ public class TestController {
 
     @Autowired
     private ProducerIndexApi producerIndexApi;
+    @Autowired
+    private AppApi appApi;
 
     @GetMapping("index")
     public String testIndex() {
         return producerIndexApi.index();
+    }
+
+
+    @GetMapping("index2")
+    public String testIndex2() {
+        return appApi.index();
     }
 
 }

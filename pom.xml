@@ -6,6 +6,7 @@
 		<module>ribbon-feigin</module>
         <module>producer</module>
         <module>cloud-feigin</module>
+        <module>zookeeper</module>
     </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

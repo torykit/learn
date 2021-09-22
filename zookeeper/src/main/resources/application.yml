@@ -1,0 +1,7 @@
+server:
+  port: 3333
+
+spring:
+  zookeeper:
+    address: 101.132.132.250:3234
+    timeout: 30
